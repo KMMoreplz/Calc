@@ -103,7 +103,8 @@ public class Main {
             if (oneSaver % twoSaver == 0) {
                 System.out.println(romans[(oneSaver / twoSaver) - 1]);
                 System.exit(0);
-            }
+            }else {System.out.println("throws Exception!");
+                System.exit(0);}   //забыл добавить )
         }
     }
 }
