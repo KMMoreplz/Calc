@@ -80,7 +80,6 @@ public class Main {
                 break;
             }
         }
-
         if (transformed != transformed2) {
             System.out.println("throws Exception!");
             System.exit(0);
