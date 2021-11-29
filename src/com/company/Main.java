@@ -61,7 +61,7 @@ public class Main {
 
 
     public static void transformerToInts(String one, String two, int oneSaver, int twoSaver,
-                                           String operation) {
+                                         String operation) {
         boolean transformed = false;
         boolean transformed2 = false;
         String[] romans = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
@@ -91,7 +91,7 @@ public class Main {
         if (operation.equals("-") && oneSaver >= twoSaver && transformed) {
             if (oneSaver-twoSaver==0){System.out.println(0);} //Либо System.out.println("throws Exception!");
             else
-            System.out.println(romans[oneSaver - twoSaver - 1]);
+                System.out.println(romans[oneSaver - twoSaver - 1]);
             System.exit(0);
         }
         if (operation.equals("*") && transformed) {
@@ -99,11 +99,10 @@ public class Main {
             System.exit(0);
         }
         if (operation.equals("/") && twoSaver != 0 && transformed) {
-            if (oneSaver % twoSaver == 0) {
-                System.out.println(romans[(oneSaver / twoSaver) - 1]);
-                System.exit(0);
-            }else {System.out.println("throws Exception!");
-                System.exit(0);}   //забыл добавить )
-        }
+            System.out.println(romans[(oneSaver / twoSaver) - 1]);
+            System.exit(0);
+
+        }else {System.out.println("throws Exception!");
+            System.exit(0);}   //забыл добавить )
     }
 }
