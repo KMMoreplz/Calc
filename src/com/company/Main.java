@@ -18,7 +18,6 @@ public class Main {
         transformerToInts(value11, value22, value1, value2,  operation);
         value1 = Integer.parseInt(value11);
         value2 = Integer.parseInt(value22);
-
         if (value1==0||value2==0){System.out.println("throws Exception!");  System.exit(0);}
         if (operation.equals("+")) {
             System.out.println(value1 + value2);
@@ -33,12 +32,13 @@ public class Main {
             System.out.println(value1 * value2);
             System.exit(0);
         }
-        if (operation.equals("/") && value2 != 0) {
+        if (operation.equals("/")) {
             System.out.println(value1 / value2);
         } else {
 
             System.out.println("throws Exception!");
         }
+
         System.exit(0);
     }
 
@@ -102,7 +102,6 @@ public class Main {
             System.out.println(romans[(oneSaver / twoSaver) - 1]);
             System.exit(0);
 
-        }else {System.out.println("throws Exception!");
-            System.exit(0);}   //забыл добавить )
+        } //забыл добавить )
     }
 }
